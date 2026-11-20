@@ -265,7 +265,7 @@
 const CONFIG = {
   para: "",          // nombre de ella (vacío = "ti")
   de:   "Alguien que piensa en ti",
-  tel:  "",          // tu WhatsApp con código de país, sin + (ej. 51987654321). Vacío = ella elige contacto
+  tel:  "51910236424", // WhatsApp fijo (Perú +51) — todas las respuestas llegan aquí
   carta: [
     "Hola {para} 🌷",
     "Llevo un tiempo queriendo preguntarte algo,",
@@ -289,7 +289,7 @@ const CONFIG = {
 const q = new URLSearchParams(location.search);
 const PARA = (q.get("para") || CONFIG.para).trim();
 const DE   = (q.get("de")   || CONFIG.de).trim();
-const TEL  = (q.get("tel")  || CONFIG.tel).replace(/\D/g, "");
+const TEL  = CONFIG.tel.replace(/\D/g, ""); // fijo: no se puede cambiar desde el link
 const $ = s => document.querySelector(s);
 
 /* ---- navegación entre escenas ---- */

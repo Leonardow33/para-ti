@@ -11,12 +11,13 @@ Página para invitar a salir a alguien, con un flujo de 5 pantallas:
 ## Personalizar el link (sin tocar código)
 
 ```
-https://leonardow33.github.io/para-ti/?para=NOMBRE&de=TU_NOMBRE&tel=51999999999
+https://leonardow33.github.io/para-ti/?para=NOMBRE&de=TU_NOMBRE
 ```
 
 - `para`: nombre de ella
 - `de`: tu nombre (o la firma de la carta)
-- `tel`: tu WhatsApp con código de país, sin `+` ni espacios
+
+La confirmación por WhatsApp siempre llega al número fijo en `CONFIG.tel`.
 
 ## Personalizar el contenido
 
